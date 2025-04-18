@@ -1,0 +1,100 @@
+THIS FILE WILL WE REMOVED AT THE TIME OF DEPLOYEMENT, THIS IS JUST TO GET AN IDEA OF THE PROJECT AND THE THINGS WE DO IN IT.
+
+
+steps for leader
+----------------
+1)settings > collabrators > confirm password > add people > github id of the people 
+2)pull requests> new pull request > go through eah request > create pull request > add description if needed > create pull request >merge pull request > confirm merge
+
+steps for members
+----------------
+
+use the following steps for the first TIME
+-----------------------------------------
+1)check the mail > view the invitation > accept the invitation 
+to clone the project -
+2)create a folder in your computer -open cmd from it- git clone url
+in our case the url is https://github.com/fazahafami/pawMart_frontend.git
+3)cd pawMart_frontend
+4)code .
+5)npm install
+6)npm run dev
+
+
+EVERYDAY AFTER MAKING THE CHANGES
+------------------------
+1)in cmd - git init 
+2)git add .
+3)git commit -m "the changes you made"
+4)git branch branchname(yourname)
+5)git branch
+6)git checkout branchname
+7)git branch
+8)git push origin branchname
+
+
+use the following steps everyday before making changes
+-----------------------------------------------------
+1)go your created  project folder - open cmd 
+git pull url
+url- https://github.com/fazahafami/pawMart_frontend.git
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PROJECT sTRUCTURE
+-----------------
+
+frontend/
+├── public/
+│
+├── src/
+│   ├── assets/                    # Images, icons, fonts
+│   │   ├── images/
+│   │   └── logos/
+│
+│   ├── components/                # Reusable UI components
+│   │   ├── Header.jsx
+│   │   ├── Footer.jsx
+│   │   ├── PetCard.jsx
+│   │   ├── SupplyCard.jsx
+│   │   ├── CartItem.jsx
+│   │   ├── FavouriteItem.jsx
+│   │   ├── ReviewForm.jsx
+│   │   └── ReviewList.jsx
+│
+│   ├── pages/                     # Full page-level views
+│   │   ├── LandingPage.jsx
+│   │   ├── Login.jsx
+│   │   ├── ShopPets.jsx
+│   │   ├── ShopSupplies.jsx
+│   │   ├── Cart.jsx
+│   │   ├── Favourites.jsx
+│   │   └── AdminDashboard.jsx
+│
+│   ├── context/                   # Global state management (Context API)(not created)
+│   │   ├── AuthContext.js         # Login, authentication, user data
+│   │   └── CartContext.js         # Cart management
+│
+│   ├── services/                  # API-related files
+│   │   ├── allApi.js              # All API functions (GET, POST, PUT, DELETE)
+│   │   ├── commonApi.js           # Common axios logic
+│   │   └── serverurl.js           # Backend URL
+│
+│   ├── utils/                     # Utility functions(not created)
+│   │   ├── auth.js                # Login check, token helpers
+│   │   └── format.js              # Price/date formatters, etc.
+│
+│   ├── App.js                     # Main app component
+│   ├── routes.js                  # Central routing setup (not created)
+│   ├── index.js                   # Entry point
+│   ├── App.css                    # Component-level styling
+│   └── index.css                  # Global styles
+│
+├── .env                           # (to create) API_URL = http://localhost:3001
+├── .gitignore
+├── index.html                     # main html file
+├── package.json
+├── package-lock.json
+└── README.md
+
+
